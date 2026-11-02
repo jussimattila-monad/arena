@@ -6,6 +6,21 @@ completeness, but keep the structure clean enough that the game can grow.
 
 Live site: https://jussimattila-monad.github.io/arena/
 
+## Game design
+
+The game design lives in `docs/game-design.md` and is the source of truth for what
+is being built:
+
+@docs/game-design.md
+
+- When asked to implement design changes, find what changed with
+  `git diff -- docs/` (uncommitted edits) or `git diff <commit> -- docs/` (since a
+  given commit), then update the code to match. Commit the doc edits together
+  with the code that implements them.
+- Items under "Open questions and ideas" are not requirements. Don't implement them
+  unless asked.
+- If the design is ambiguous or contradicts existing code, ask before guessing.
+
 ## Commands
 
 ```bash
