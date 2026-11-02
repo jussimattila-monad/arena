@@ -26,11 +26,12 @@
   },
   "scripts": {
     "lint:js": "eslint \"src/**/*.{js,ts}\"",
-    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css": "stylelint --allow-empty-input \"src/**/*.css\"",
     "lint": "npm run lint:js && npm run lint:css",
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "type": "module"
